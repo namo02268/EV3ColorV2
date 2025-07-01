@@ -8,6 +8,7 @@ ColorSensor V2 は、LEGO MINDSTORMS EV3 向けのカスタムプログラミン
 センサーから取得した 生のRGB値（Red・Green・Blue） を直接出力します。
 
 📷 使用イメージ：
+
 ![RawRGB_Measure](./images/README_RawRGB_Measure.png)
 
 ### Raw RGB 比較モード
@@ -16,12 +17,7 @@ ColorSensor V2 は、LEGO MINDSTORMS EV3 向けのカスタムプログラミン
 
 📷 使用イメージ：
 
-
 ![RawRGB_Compare](./images/README_RawRGB_Compare.png)
-
-![RawRGB_Compare](./images/README_RawRGB_switch.png)
-
-
 
 ## 特徴
 ✅ RawRGBの取得
@@ -37,7 +33,7 @@ EV3標準ブロックでは取得できない生のRGB値を読み取れます�
 スイッチブロックやループブロックで色を使った分岐処理ができます。
 
 ## インストール方法
-- ColorSensorV2.ev3b をダウンロードします
+- [Releases ページ](https://github.com/namo02268/EV3ColorV2/releases)よりColorSensorV2.ev3b をダウンロードします
 - EV3ソフトウェアを開き、
 　[ツール] > [ブロック インポート ウィザード] を選択します
 - ダウンロードした .ev3b ファイルを読み込みます
@@ -48,4 +44,5 @@ EV3標準ブロックでは取得できない生のRGB値を読み取れます�
 以下は「前進し、緑色を検出したら停止する」プログラムの例です。
 
 📷 プログラム例：
+
 ![RawRGB_Example](./images/README_RawRGB_Example.png)
