@@ -2,7 +2,7 @@
 <EditorStrings>
   <PolyGroups ModuleName="ColorSensorV2">
     <PolyGroup Name="ColorSensorV2" DisplayName="カラー センサー V2">
-      <Description><![CDATA[<p>Context help for PolyGroup <b>Third party test</b></p>]]></Description>
+      <Description><![CDATA[<p>Context help for PolyGroup <b>Color Sensor</b></p>]]></Description>
       <Parameter Name="Port" DisplayName="ポート" Link="page.html?Path=editor%2FPortSelector.html#Port">
         <Description><![CDATA[多くのプログラミング ブロックでは、 EV3ブロックのポート（A、B、C、D、1、2、3、および4）を選択する必要があります。ポート セレクターはこれらのブロックの最上部右隅にあります。]]></Description>
       </Parameter>
@@ -36,26 +36,26 @@
       <Parameter Name="Blue" DisplayName="青">
         <Description><![CDATA[<p><b>タイプ:</b> 数値<br/><b>備考:</b> RGBモードで取得したBのデータ値</p>]]></Description>
       </Parameter>
-      <Parameter Name="Red_Min" DisplayName="赤の最小値">
-        <Description><![CDATA[<p><b>タイプ:</b> 数値<br/><b>可能な入力値:</b> 0 - 1024<br/><b>備考:</b> 赤の最小値</p>]]></Description>
+      <Parameter Name="Red_Min" DisplayName="赤の下限値">
+        <Description><![CDATA[<p><b>タイプ:</b> 数値<br/><b>可能な入力値:</b> 0 - 1024<br/><b>備考:</b> 赤の下限値</p>]]></Description>
       </Parameter>
-      <Parameter Name="Red_Max" DisplayName="赤の最大値">
-        <Description><![CDATA[<p><b>タイプ:</b> 数値<br/><b>可能な入力値:</b> 0 - 1024<br/><b>備考:</b> 赤の最大値</p>]]></Description>
+      <Parameter Name="Red_Max" DisplayName="赤の上限値">
+        <Description><![CDATA[<p><b>タイプ:</b> 数値<br/><b>可能な入力値:</b> 0 - 1024<br/><b>備考:</b> 赤の上限値</p>]]></Description>
       </Parameter>
-      <Parameter Name="Green_Min" DisplayName="緑の最小値">
-        <Description><![CDATA[<p><b>タイプ:</b> 数値<br/><b>可能な入力値:</b> 0 - 1024<br/><b>備考:</b> 緑の最小値</p>]]></Description>
+      <Parameter Name="Green_Min" DisplayName="緑の下限値">
+        <Description><![CDATA[<p><b>タイプ:</b> 数値<br/><b>可能な入力値:</b> 0 - 1024<br/><b>備考:</b> 緑の下限値</p>]]></Description>
       </Parameter>
-      <Parameter Name="Green_Max" DisplayName="緑の最大値">
-        <Description><![CDATA[<p><b>タイプ:</b> 数値<br/><b>可能な入力値:</b> 0 - 1024<br/><b>備考:</b> 緑の最大値</p>]]></Description>
+      <Parameter Name="Green_Max" DisplayName="緑の上限値">
+        <Description><![CDATA[<p><b>タイプ:</b> 数値<br/><b>可能な入力値:</b> 0 - 1024<br/><b>備考:</b> 緑の上限値</p>]]></Description>
       </Parameter>
-      <Parameter Name="Blue_Min" DisplayName="青の最小値">
-        <Description><![CDATA[<p><b>タイプ:</b> 数値<br/><b>可能な入力値:</b> 0 - 1024<br/><b>備考:</b> 青の最小値</p>]]></Description>
+      <Parameter Name="Blue_Min" DisplayName="青の下限値">
+        <Description><![CDATA[<p><b>タイプ:</b> 数値<br/><b>可能な入力値:</b> 0 - 1024<br/><b>備考:</b> 青の下限値</p>]]></Description>
       </Parameter>
-      <Parameter Name="Blue_Max" DisplayName="青の最大値">
-        <Description><![CDATA[<p><b>タイプ:</b> 数値<br/><b>可能な入力値:</b> 0 - 1024<br/><b>備考:</b> 青の最大値</p>]]></Description>
+      <Parameter Name="Blue_Max" DisplayName="青の上限値">
+        <Description><![CDATA[<p><b>タイプ:</b> 数値<br/><b>可能な入力値:</b> 0 - 1024<br/><b>備考:</b> 青の上限値</p>]]></Description>
       </Parameter>
       <Parameter Name="Color_Range" DisplayName="範囲">
-        <Description><![CDATA[]]></Description>
+        <Description><![CDATA[<p><b>タイプ:</b> 論理値（Boolean）<br/><b>備考:</b> 範囲内を検出するか、範囲外を検出するかを指定します。<br/>True = 範囲内を検出、False = 範囲外を検出</p>]]></Description>
       </Parameter>
       <Block Mode="MeasureColor" DisplayName="色">
         <Description><![CDATA[「測定 - 色」モードは、検出した色の色番号を出力します。]]></Description>
@@ -84,10 +84,10 @@
       <Category Name="Calibrate" DisplayName="調整">
         <Category Name="ReflectedLight" DisplayName="反射光の強さ">
           <Block Mode="CalibrateMinColor" DisplayName="最小">
-            <Description><![CDATA[「調整 - 最小値」モードにより、値の入力で光の強さの最小値を指定することができます。調整後、カラー センサーがこの光の強さを 0 または指定された値として報告します。]]></Description>
+            <Description><![CDATA[「調整 - 下限値」モードにより、値の入力で光の強さの下限値を指定することができます。調整後、カラー センサーがこの光の強さを 0 または指定された値として報告します。]]></Description>
           </Block>
           <Block Mode="CalibrateMaxColor" DisplayName="最大">
-            <Description><![CDATA[「調整 - 最大値」モードにより、値の入力で光の強さの最大値を指定することができます。調整後、カラー センサーがこの光の強さを 100 または指定された値として報告します。]]></Description>
+            <Description><![CDATA[「調整 - 上限値」モードにより、値の入力で光の強さの上限値を指定することができます。調整後、カラー センサーがこの光の強さを 100 または指定された値として報告します。]]></Description>
           </Block>
           <Block Mode="CalibrateResetColor" DisplayName="リセット">
             <Description><![CDATA[「調整 - リセット」モードによりカラー センサーの調整値を初期設定状態に戻します。]]></Description>
